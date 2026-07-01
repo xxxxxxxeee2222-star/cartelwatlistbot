@@ -4,5 +4,8 @@
   "bridge_token": "CartelSecret2026",
   "poll_timeout_seconds": 30,
   "required_channel": "@CartelOnline1",
-  "max_nicks_per_account": 3
+  "max_nicks_per_account": 3,
+  "admin_ids": [
+    "5857829625"
+  ]
 }

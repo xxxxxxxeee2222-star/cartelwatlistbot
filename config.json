@@ -1,8 +1,24 @@
 {
   "telegram_bot_token": "8610653503:AAFcaXiD_tvGl2DPaXRN9WXWEhBq7w0EjWg",
-  "bridge_url": "http://45.93.200.43:25574/request",
+  "bridge_url": "http://45.93.200.43:18578/request",
   "bridge_token": "CartelSecret2026",
+  "hub_bridge_url": "http://45.93.200.43:18578/request",
+  "hub_bridge_token": "CartelSecret2026",
   "poll_timeout_seconds": 30,
   "required_channel": "@CartelOnline1",
+  "required_channel_url": "https://t.me/CartelOnline1",
+  "required_channels": [
+    {
+      "chat_id": "@Cartel0nline",
+      "url": "https://t.me/Cartel0nline"
+    },
+    {
+      "chat_id": "@CartelOnline1",
+      "url": "https://t.me/CartelOnline1"
+    }
+  ],
+  "admin_ids": [
+    "5857829625"
+  ],
   "max_nicks_per_account": 3
 }

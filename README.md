@@ -1,29 +1,25 @@
-# cartelwt
+# StandaloneWhitelistBot
 
-Telegram-бот и Paper/Purpur-плагин для простого whitelist без хаба.
+Отдельные файлы Telegram-бота для whitelist.
 
-Что делает:
-- проверяет подписку на канал;
-- ограничивает добавление до 3 ников на один Telegram-аккаунт;
-- вызывает команду `swl add <ник>` на сервере;
-- хранит привязанные ники в `bot/users.json`.
+Что умеет:
+- проверяет подписку на канал или группу;
+- разрешает максимум 3 ника на один Telegram-аккаунт;
+- отклоняет ники с запрещёнными словами из `banned_words.json`;
+- отправляет валидный ник на ваш bridge-сервер whitelist.
 
-Команды бота:
-- `/start`
-- `/swl add <ник>`
-- `/my_nicks`
-
-Команда плагина:
-- `/tgbridge reload`
-
-Настройка:
-- `plugin/src/main/resources/config.yml` - команда `swl add %player%`;
-- `bot/config.json` - токен Telegram, адрес `bridge_url` и секрет `bridge_token`.
-
-Запуск бота:
+Как запустить:
+1. Скопируйте `config.example.json` в `config.json`.
+2. Заполните токен бота, `bridge_url`, `bridge_token` и канал.
+3. Убедитесь, что бот добавлен в канал или группу, где нужно проверять подписку.
+4. Запустите:
 
 ```powershell
 python bot.py
 ```
 
-Если хочешь, я ещё могу сразу собрать это в отдельную папку с готовым `cartelwt-1.0.jar`.
+Команды:
+- `/start`
+- `/help`
+- `/request НИК`
+- `/my_nicks`

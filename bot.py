@@ -279,7 +279,7 @@ def build_subscription_required_message(config, missing):
 
 def build_start_text(config, storage=None):
     lines = [
-        "<b>MiridesSMP whitelist</b>",
+        "<b>CartelOnline whitelist</b>",
         "",
         "Бот добавляет Minecraft-ник в whitelist сервера.",
         "",

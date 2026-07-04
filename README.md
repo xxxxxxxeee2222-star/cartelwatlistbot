@@ -1,17 +1,29 @@
 # cartelwt
 
-Telegram whitelist bot without hub.
+Telegram-бот и Paper/Purpur-плагин для простого whitelist без хаба.
 
-Commands:
-- `/add <nick>` add a nick to whitelist
-- `/nicks` show your nicks
+Что делает:
+- проверяет подписку на канал;
+- ограничивает добавление до 3 ников на один Telegram-аккаунт;
+- вызывает команду `swl add <ник>` на сервере;
+- хранит привязанные ники в `bot/users.json`.
 
-Admin commands:
-- `/stats` show total nicks and recent additions
-- `/who <nick>` show who added a nick
+Команды бота:
+- `/start`
+- `/swl add <ник>`
+- `/my_nicks`
 
-Admin access is controlled by `admin_ids` in `bot/config.json`.
+Команда плагина:
+- `/tgbridge reload`
 
-The bot writes:
-- `bot/users.json` for user nick lists
-- `bot/audit.json` for add history
+Настройка:
+- `plugin/src/main/resources/config.yml` - команда `swl add %player%`;
+- `bot/config.json` - токен Telegram, адрес `bridge_url` и секрет `bridge_token`.
+
+Запуск бота:
+
+```powershell
+python bot.py
+```
+
+Если хочешь, я ещё могу сразу собрать это в отдельную папку с готовым `cartelwt-1.0.jar`.

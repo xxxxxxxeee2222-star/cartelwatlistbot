@@ -1,6 +1,6 @@
 {
-  "telegram_bot_token": "8494024654:AAEWzdlhzcBy6tGdwjQW7kL_QQYArxbQ1U0",
-  "bridge_url": "http://95.216.30.13:25955/request",
+  "telegram_bot_token": "8610653503:AAGn6nFt5Dbf7jh_YjZfI3i7BUg5PhU3o6k",
+  "bridge_url": "45.93.200.43:25574/request",
   "bridge_token": "CartelSecret2026",
   "poll_timeout_seconds": 30,
   "required_channel": "@CartelOnline1",
